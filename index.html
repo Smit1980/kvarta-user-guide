@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#14171f">
+  <meta name="description" content="Кварта — рабочее место риелтора. Инструкция по объектам, клиентам, переписке и воронке.">
+  <title>Кварта — инструкция и вход</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--graphite:#14171f;--sand:#f3ece2;--orange:#ff6a3d;--mint:#35d6a4;--amber:#f5b841;--muted:#667084;--line:#e7e0d5;--paper:#fff;--shadow:0 1px 2px #14171f09,0 14px 38px #14171f10}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--sand);color:var(--graphite);font:15px/1.65 Manrope,"Segoe UI",sans-serif}a{color:inherit}button{font:inherit}
+    .wrap{max-width:1160px;margin:auto;padding:0 24px}.top{background:var(--graphite);color:white}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;font-size:19px;letter-spacing:-.03em}.mark{display:grid;place-items:center;width:36px;height:36px;border-radius:11px;background:var(--orange);color:var(--graphite);font-weight:800;font-size:23px;line-height:1}.navlinks{display:flex;gap:23px;align-items:center}.navlinks a{text-decoration:none;font-weight:700;font-size:13px;color:#dbe0e8}.navlinks a:hover,.navlinks a:focus-visible{text-decoration:underline}.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:54px;padding:64px 0 78px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--orange)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(35px,5.1vw,64px);line-height:1.1;letter-spacing:-.055em;margin:13px 0 22px}h2{font-size:clamp(25px,3.3vw,37px);line-height:1.2;letter-spacing:-.035em;margin-bottom:10px}h3{font-size:18px;line-height:1.3;letter-spacing:-.02em;margin-bottom:8px}.hero p{max-width:610px;color:#c5cad4;font-size:17px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;min-height:47px;border-radius:11px;padding:11px 17px;text-decoration:none;font-weight:800;font-size:14px;border:1px solid transparent;transition:transform .15s,box-shadow .15s}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px #0002}.btn:focus-visible,a:focus-visible{outline:3px solid var(--mint);outline-offset:3px}.btn.primary{background:var(--orange);color:var(--graphite)}.btn.outline{color:white;border-color:#656d7b}.btn.dark{background:var(--graphite);color:white}.btn.light{background:white;border-color:var(--line)}.hint{font-size:12px!important;color:#aab2c0!important;margin:16px 0 0}
+    .preview{background:var(--sand);border-radius:22px;padding:12px;box-shadow:0 30px 85px #0005;transform:rotate(1deg)}.preview-bar{height:30px;background:#fff;border-radius:12px 12px 0 0;display:flex;align-items:center;gap:6px;padding:0 12px}.preview-bar i{width:7px;height:7px;background:#c8cbd1;border-radius:50%}.preview-bar i:first-child{background:var(--orange)}.preview-body{display:grid;grid-template-columns:86px 1fr;min-height:303px;background:#f5efe6;border-radius:0 0 12px 12px;overflow:hidden}.preview-rail{background:var(--graphite);padding:16px 10px}.preview-rail b{color:white;font-size:10px}.preview-rail span{display:block;background:#39404d;height:8px;border-radius:4px;margin-top:20px}.preview-rail span:nth-of-type(2){background:var(--orange)}.preview-main{padding:20px 18px}.preview-main>strong{font-size:17px}.preview-main>small{display:block;color:var(--muted);margin-bottom:17px}.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.mini-card{background:white;border:1px solid var(--line);border-radius:10px;padding:11px}.mini-card b{display:block;font-size:18px;line-height:1.2}.mini-card small{font-size:8px;color:var(--muted)}.mini-card:nth-child(2) b{color:#b97117}.mini-card:nth-child(3) b{color:#159b73}.mini-list{background:white;border:1px solid var(--line);border-radius:10px;margin-top:10px;padding:11px}.mini-list em{display:block;font-style:normal;font-weight:800;font-size:9px;margin-bottom:7px}.mini-list span{display:block;height:20px;border-top:1px solid var(--line);font-size:8px;color:#555f70;padding:4px 1px}.mini-list span i{float:right;height:7px;width:31%;border-radius:10px;background:#f6bba8}.mini-list span:last-child i{background:#b8ebdb}
+    main{padding:70px 0 100px}.section{margin-bottom:76px;scroll-margin-top:24px}.section-head{max-width:750px;margin-bottom:28px}.section-head p{color:var(--muted);margin-bottom:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:var(--paper);border:1px solid var(--line);border-radius:17px;padding:22px;box-shadow:var(--shadow)}.card p{color:var(--muted);margin-bottom:0}.step{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#ffe6dc;color:#a63e1c;font-size:13px;font-weight:800;margin-bottom:16px}.path{font-size:12px;font-weight:800;color:#aa441f;margin-bottom:8px}.example{background:#f8f4ee;border:1px solid var(--line);border-radius:13px;padding:16px;margin:17px 0 0;color:#333b48;font-size:13px}.example b{display:block;color:var(--graphite);margin-bottom:5px}.example p{margin:0;color:#333b48}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}.flow{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.flow span{border:1px solid #d3d7dc;background:#f9fafb;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700}.flow span:after{content:" →";color:var(--orange);margin-left:8px}.flow span:last-child:after{content:""}.notice{background:#fff8ee;border-left:4px solid var(--amber);padding:16px 18px;border-radius:0 12px 12px 0;color:#4b4438;margin-top:18px}.notice p{margin:0}.quick{background:var(--graphite);color:white;border-radius:22px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:24px}.quick p{color:#c5cad4;margin:0}.quick h2{margin-bottom:8px}.quick .actions{margin:0}.foot{border-top:1px solid var(--line);padding:25px 0 40px;color:var(--muted);font-size:12px}.foot .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;gap:38px;padding:50px 0 64px}.preview{max-width:590px}.grid{grid-template-columns:1fr 1fr}.navlinks{gap:12px}.navlinks a:nth-child(2){display:none}.quick{display:block}.quick .actions{margin-top:22px}}
+    @media(max-width:590px){.wrap{padding:0 16px}.nav{min-height:64px}.navlinks a{font-size:12px}.navlinks a:first-child{display:none}.hero{padding:40px 0 54px}.hero p{font-size:15px}.actions .btn{width:100%}.grid,.two{grid-template-columns:1fr}.preview-body{grid-template-columns:64px 1fr;min-height:280px}.preview-main{padding:13px 10px}.mini-grid{gap:4px}.mini-card{padding:7px}.mini-card b{font-size:15px}.card{padding:19px}main{padding:54px 0 70px}.section{margin-bottom:56px}.quick{padding:23px}.flow span:after{content:""}.foot .wrap{display:block}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+<header class="top">
+  <nav class="nav wrap" aria-label="Основная навигация">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true">К</span><span>Кварта</span></a>
+    <div class="navlinks"><a href="#start">Первый день</a><a href="#objects">Объекты</a><a href="#clients">Клиенты</a><a href="#messages">Переписка</a><a href="#access">Вход</a></div>
+  </nav>
+  <div class="hero wrap" id="top">
+    <div>
+      <div class="eyebrow">Инструкция для команды риелтора</div>
+      <h1>Работа с клиентами без потерянных деталей.</h1>
+      <p>Объекты, история общения, задачи и воронка в одном рабочем пространстве. Начните с короткого маршрута ниже и откройте сервис.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://win-tsm2esv5nlf.tailb0b5b0.ts.net:8443/login">Открыть веб-версию <span aria-hidden="true">↗</span></a>
+        <a class="btn outline" href="https://t.me/Ai_EstateAgentPro_bot">Открыть Telegram-бота <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="hint">Веб-версия работает на компьютере владельца. Если она временно недоступна, попросите администратора проверить запуск.</p>
+    </div>
+    <div class="preview" aria-label="Схематичный вид главной страницы Кварты с демонстрационными числами">
+      <div class="preview-bar"><i></i><i></i><i></i></div>
+      <div class="preview-body"><div class="preview-rail"><b>Кварта</b><span></span><span></span><span></span><span></span></div><div class="preview-main"><strong>Главная</strong><small>Пример интерфейса · демонстрационные данные</small><div class="mini-grid"><div class="mini-card"><b>12</b><small>объектов</small></div><div class="mini-card"><b>3</b><small>нужны действия</small></div><div class="mini-card"><b>8</b><small>клиентов</small></div></div><div class="mini-list"><em>Сегодня</em><span>Ответить на новое обращение <i></i></span><span>Уточнить запрос клиента <i></i></span><span>Проверить публикацию <i></i></span></div></div></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="section" id="start">
+    <div class="section-head"><div class="eyebrow">Начало работы</div><h2>Первый рабочий день</h2><p>Четыре действия, чтобы информация не оставалась только в переписке.</p></div>
+    <div class="grid">
+      <article class="card"><span class="step">1</span><h3>Войдите в систему</h3><p>Новый сотрудник регистрируется по рабочему email и сам придумывает пароль. Администратор подтверждает заявку в разделе «Пользователи».</p></article>
+      <article class="card"><span class="step">2</span><h3>Добавьте объекты</h3><p>Один объект создайте вручную. Для каталога используйте CSV и сначала проверьте файл без импорта.</p></article>
+      <article class="card"><span class="step">3</span><h3>Сохраните клиента</h3><p>Укажите имя, телефон или email, запрос и бюджет. Привяжите к нему подходящий объект.</p></article>
+      <article class="card"><span class="step">4</span><h3>Назначьте следующий шаг</h3><p>После каждого разговора зафиксируйте итог и задачу. Сроки видны на главной и в мобильном приложении.</p></article>
+    </div>
+  </section>
+  <section class="section" id="objects">
+    <div class="section-head"><div class="eyebrow">Каталог</div><h2>Как завести объект</h2><p>Карточка объединяет характеристики, фотографии, документы, публикации и связанные сделки.</p></div>
+    <div class="two">
+      <article class="card"><div class="path">ОБЪЕКТЫ → + ДОБАВИТЬ ОБЪЕКТ</div><h3>Вручную: один объект</h3><p>Заполните название и адрес, затем цену, площадь, комнаты, этаж и тип. Сохраните карточку. В ней загрузите фото и документы, откройте адрес на Яндекс Картах и подготовьте текст объявления из заполненных полей.</p><div class="example"><b>Пример карточки</b><p>О-104 · 2-комнатная квартира · Москва, Лесная 12 · 54 м² · 6/12 этаж · 12 500 000 ₽.</p></div></article>
+      <article class="card"><div class="path">ОБЪЕКТЫ → ИМПОРТ ИЗ CSV</div><h3>Сразу несколько объектов</h3><p>В файле нужны «название» и «адрес». Добавьте постоянный «артикул», чтобы обновлять объект без дублей. Сначала нажмите «Проверить», исправьте ошибки в отчёте, затем примените импорт.</p><div class="example"><b>Для площадок</b><p>Кварта готовит текст и хранит статус публикации. Объявление на Авито, Циане, Яндекс Недвижимости или Домклике размещайте в кабинете самой площадки.</p></div></article>
+    </div>
+  </section>
+  <section class="section" id="clients">
+    <div class="section-head"><div class="eyebrow">База и воронка</div><h2>Как вести клиента от запроса до сделки</h2><p>Фиксируйте факты после разговора, пока они свежие. Так следующий сотрудник увидит контекст и обещания клиенту.</p></div>
+    <div class="two">
+      <article class="card"><div class="path">КЛИЕНТЫ → ДОБАВИТЬ КЛИЕНТА</div><h3>Создайте карточку</h3><p>Запишите имя и контакт, бюджет, желаемый район, количество комнат и важные условия. После звонка добавьте заметку и дату следующего действия.</p><div class="example"><b>Пример заметки</b><p>Ирина Смирнова ищет двухкомнатную квартиру в Химках до 9 млн ₽, с ипотекой. Подобрать варианты и связаться в субботу.</p></div></article>
+      <article class="card"><div class="path">ВОРОНКА → КАРТОЧКА СДЕЛКИ</div><h3>Двигайте сделку</h3><p>Привяжите клиента к объекту. На компьютере перетаскивайте карточку между колонками, на телефоне выберите этап в карточке сделки. «+1», «+3» и «+7» переносят следующую задачу на указанное число дней.</p><div class="flow" aria-label="Типичный путь сделки"><span>Обращение</span><span>Квалификация</span><span>Показ</span><span>Решение</span></div></article>
+    </div>
+  </section>
+  <section class="section" id="messages">
+    <div class="section-head"><div class="eyebrow">Общение</div><h2>Как вести переписку</h2><p>Кварта хранит историю контактов и помогает не забыть ответить.</p></div>
+    <div class="two">
+      <article class="card"><div class="path">СООБЩЕНИЯ → ДИАЛОГ</div><h3>Ответьте и сохраните результат</h3><p>Откройте новое обращение, уточните запрос, сохраните подготовленный ответ в Кварте и отправьте его клиенту в исходном канале. Затем привяжите клиента и объект к сделке.</p><div class="example"><b>Пример ответа</b><p>Здравствуйте, Анна! Квартира на Лесной 12 актуальна. Подскажите, какой у вас бюджет и когда удобно посмотреть объект?</p></div></article>
+      <article class="card"><div class="path">TELEGRAM → НАПАРНИК</div><h3>Добавьте заметку голосом работы</h3><p>После звонка напишите боту обычной фразой о клиенте и договорённости. Проверьте извлечённые поля в карточке клиента и при необходимости уточните их.</p><div class="example"><b>Пример сообщения боту</b><p>Ирина: объект О-104 понравился, но нужен балкон. Созвониться завтра после 18:00.</p></div></article>
+    </div>
+    <div class="notice"><p>Ответ, сохранённый в Кварте, пока не отправляется автоматически на Авито, Циан, в Telegram или на другую площадку. Отправьте его клиенту там, откуда пришло обращение.</p></div>
+  </section>
+  <section class="section" id="access">
+    <div class="quick"><div><div class="eyebrow">Можно начинать</div><h2>Откройте своё рабочее место</h2><p>Для веб-версии нужен одобренный аккаунт. Telegram Mini App открывается из меню бота.</p></div><div class="actions"><a class="btn primary" href="https://win-tsm2esv5nlf.tailb0b5b0.ts.net:8443/login">Веб-версия ↗</a><a class="btn outline" href="https://t.me/Ai_EstateAgentPro_bot">Telegram-бот ↗</a><a class="btn outline" href="https://win-tsm2esv5nlf.tailb0b5b0.ts.net:8443/register">Регистрация ↗</a></div></div>
+  </section>
+</main>
+<footer class="foot"><div class="wrap"><span>© Кварта · Инструкция для тестирования</span><span>Один объект. Все площадки. Ни одного потерянного клиента.</span></div></footer>
+</body>
+</html>
